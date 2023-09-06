@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>صفحة الصفحة الرئيسية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: #666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        // عند تحميل الصفحة بالكامل
+        window.onload = function() {
+            // الحصول على عنصر الصورة
+            var image = document.getElementById("myImage");
+
+            // تغيير الصورة عند النقر عليها
+            image.onclick = function() {
+                image.src = "صورة2.jpg";
+            };
+        };
+    </script>
+</head>
+<body>
+    <h1>مرحبًا بك في صفحة الصفحة الرئيسية</h1>
+    <p>هذه هي صفحتك الرئيسية.</p>
+    <ul>
+        <li><a href="#">رابط 1</a></li>
+        <li><a href="#">رابط 2</a></li>
+        <li><a href="#">رابط 3</a></li>
+    </ul>
+    <img id="myImage" src="images/nizar6.JPG" alt="صورة">
+    <ul>
+        <li><a href="صفحة1.html">صفحة 1</a></li>
+        <li><a href="صفحة2.html">صفحة 2</a></li>
+        <li><a href="صفحة3.html">صفحة 3</a></li>
+    </ul>
+</body>
+</html>
